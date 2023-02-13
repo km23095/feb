@@ -1,0 +1,166 @@
+<html><meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script><link href="https://feeldreams.github.io/night/style.css" rel="stylesheet" type="text/css" />
+
+<head>
+<title>FOR MAMI</title>
+
+</head>
+<body>
+	
+   <!-- Ganti Audio di sini -->
+   <audio src="audio.mp3" id="linkmp3" class="sembunyi"></audio>
+   
+   <div id="bodyblur">
+     <!-- Wallpaper --><img src="https://media.istockphoto.com/id/1298283006/video/hot-red-hearts-move-from-center-4k-seamless-looped-animated-background.jpg?s=640x640&k=20&c=wclKyi7D0P5yOk5-4hI-TtGr__SU74IyAmukYQEwJck=" id="wallpaper"/><div id="beneranblur"></div>
+   </div>
+   
+   <div id='Content'>
+
+     <div id="suratin" onClick="memulai();">
+       <!-- Tombol Surat --><img src="https://media3.giphy.com/media/xwx6UV2qgwLlDQ5MRW/giphy.gif?cid=790b7611a8ea1bebb8c7c097dbc9ebf54fac24023caf8d2f&rid=giphy.gif&ct=s"/>
+     </div>
+     <p id="ket">Click mo haydol!</p>
+
+     <div class="kumpulanstiker">
+         <!-- Stiker untuk Konten -->
+         <img src="https://media.tenor.com/8ZQda51r0EsAAAAM/hi-love.gif" id="stiker1"/>
+         <img src="https://media.tenor.com/b_qmBR-Nc-IAAAAC/small-milk-and-motcha.gif" id="stiker2"/>
+         <img src="https://media.tenor.com/fsItygHEVvIAAAAM/sending-love.gif" id="stiker3"/>
+         <img src="https://media.tenor.com/oqab4fT-CMwAAAAM/love-couples.gif" id="stiker4"/>
+         <img src="https://media.tenor.com/mabjMYRKhwIAAAAM/i-love-you.gif" id="stiker5"/>
+
+         <!-- Stiker untuk Akhiran -->
+         <img src="https://feeldreams.github.io/bunga.gif" id="stiker"/>
+     </div>
+     <p id="halo">HALOOOO</p>
+
+     <script class="sembunyi">
+       async function pesanAwal() {
+          suratin.style="display:none";ket.style="display:none";
+          await swalst.fire({
+            title: 'HALOOOOO MAMIII! ❤️',
+            imageUrl: '' + stiker1.src,
+         });   	
+         await swalst.fire({
+            title: 'Eyyy na open nya na😍',
+            imageUrl: '' + stiker2.src,
+         });
+         await swalst.fire({
+            title: 'HAPPY VALENTINESS DAYY<3🤩🤭❤️',
+            imageUrl: '' + stiker3.src,
+         });
+         await swalst.fire({
+            title: 'Website kase trip ko❤️',
+            imageUrl: '' + stiker4.src,
+         });
+         await swalst.fire({
+            title: 'With a short message hehe🥺❤️',
+            imageUrl: '' + stiker5.src,
+         });
+         mulaikonten();
+       }
+     </script>
+     <div><blockquote id='bq'>
+
+       <!-- Konten Pembukaan -->
+       <p id="kalimat">Happy Valentines Day!!!🤭❤️     </p>
+       <p id="kalimat2">
+            Halooo Ashley Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Nullam porttitor ut orci at lobortis. Praesent et viverra massa. 
+        Mauris mattis odio diam, in imperdiet arcu auctor euismod. Pellentesque 
+        ultrices, lacus eget ultrices tincidunt, lorem enim rhoncus purus, eget 
+        rutrum ante est eget diam. Suspendisse fringilla ipsum ac mi molestie, 
+        quis posuere augue convallis. Vestibulum cursus elementum tempus. Integer d
+        ignissim erat elit, eget semper eros ultrices non. Duis id aliquet lorem. 
+        In turpis neque, ultrices id leo suscipit, gravida malesuada nunc. 
+        Pellentesque ut quam dictum, tincidunt nulla a, imperdiet turpis. Maecenas 
+        quis massa eu velit molestie sagittis eget sit amet ipsum. Sed sed neque est. 
+        Proin nec sollicitudin dolor, at porttitor metus. PANIS KANA NAMAN SHANE
+        MALAMANG DAI KO MUNA LALAAG SI LETTER ULOL.
+        
+        
+      </p>
+       <p id="kalimatbawah">Stay madanda & kyot ❤️</p> 
+       <p id="kalimatbawah2" class="sembunyi">Byebyeeee ❤️</p> 
+       <p id="kalimatbawah3" class="sembunyi">Mwuaaaaa ❤️</p> 
+
+     </blockquote></div>
+
+     <!-- Tombol Multifungsi -->
+     
+     
+     <!-- Pesan yang dikirim ke WhatsApp -->
+     <span id="pesanWA" class="sembunyi">Awww Good Night too ❤️❤️❤️</span>
+     
+   </div>
+
+<script>
+  ftom=0;aksift=0;ftganti=0;flag=1;flagg=1;fungsi=0;fungsiAwal=0;fungsitimer=0;vketikhalo=halo.innerHTML;
+  halo.innerHTML = "";var ahalo=0,vketikhalo;pesanwhatsapp = pesanWA.innerHTML;
+  Content.style = "opacity:1;margin-top:16vh;";
+  
+  async function menuju(){window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;}
+
+  const body = document.querySelector("body");const swalst = Swal.mixin({timer: 2300, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 90,}); const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageWidth: 100, imageHeight: 100,});
+  audio = new Audio('' + linkmp3.src);
+  
+  function createHeart() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
+</script>
+<script src="https://feeldreams.github.io/night/script.js"></script>
+
+<script>
+			document.addEventListener("contextmenu",function(testing){
+			testing.preventDefault()
+			
+			});
+			
+			document.onkeydown = function(e) {
+
+if(event.keyCode == 123) {
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'H'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'A'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'F'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
+return false;
+}
+}
+
+
+			
+			</script>
+</body>
+</html>
